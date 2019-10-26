@@ -9,7 +9,6 @@ var pickedColor = pickColor();
 var easyButtom = document.querySelector("#easyBtn");
 var hardButtom = document.querySelector("#hardBtn");
 createColorBoxes();
-
 resetButton.addEventListener("click", function() {
   // generate Random color
   colors = generateRandomColor(numSquares);
@@ -106,5 +105,5 @@ function randomColor() {
   //pick a blue from 0 to 255
   var blueValue = Math.floor(Math.random() * 256);
   //return a random RGB color
-  return " RGB(" + redValue + ", " + greenValue + ", " + blueValue + ")";
+  return "rgb(" + redValue + ", " + greenValue + ", " + blueValue + ")";
 }
