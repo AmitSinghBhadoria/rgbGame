@@ -18,6 +18,8 @@ resetButton.addEventListener("click", function() {
   colorDisplay.textContent = pickedColor;
   createColorBoxes();
   h1.style.backgroundColor = "steelblue";
+  this.textContent = "NEW COLOR";
+
 });
 
 easyButtom.addEventListener("click", function() {
@@ -61,7 +63,7 @@ function createColorBoxes() {
       var clickedColor = this.style.backgroundColor;
       if (clickedColor === pickedColor) {
         messageDisplay.textContent = "CORRECT";
-        resetButton.textContent = "PLAY AGAIN";
+        resetButton.textContent = "PLAY AGAIN?";
         h1.style.backgroundColor = clickedColor;
         changeColors(clickedColor);
       } else {
